@@ -680,7 +680,7 @@ class Pdf
     public function getTmpFile()
     {
         if ($this->_tmpFile === null) {
-            $this->_tmpFile = new File('', '.pdf', self::TMP_PREFIX, $this->tempDir);
+            $this->_tmpFile = new File('', '', self::TMP_PREFIX, $this->tempDir);
         }
         return $this->_tmpFile;
     }
